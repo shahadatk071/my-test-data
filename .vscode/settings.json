@@ -1,0 +1,6 @@
+{
+    "liveServer.settings.root": "/path/to/your/remote/workspace",
+    "liveServer.settings.CustomBrowser": "chrome" // You can set this to your preferred browser
+  }
+
+  
