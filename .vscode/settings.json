@@ -1,5 +1,5 @@
 {
-    "liveServer.settings.root": "gh repo clone shahadatk071/my-test-data",
+    "liveServer.settings.root": "https://github.com/shahadatk071/my-test-data",
     "liveServer.settings.CustomBrowser": "chrome",
     "files.autoSave": "afterDelay"
   }
