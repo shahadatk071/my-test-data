@@ -3,96 +3,86 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Simple Calculator</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      margin: 50px;
-    }
-
-    input {
-      width: 40px;
-      height: 40px;
-      font-size: 18px;
-    }
-
-    button {
-      width: 40px;
-      height: 40px;
-      font-size: 16px;
-      margin: 5px;
-    }
-  </style>
+  <title>Document</title>
 </head>
 <body>
+  
+  <p>
+    Listing all HTML elements would be impractical, as there are many of them, and new elements may be added in future HTML specifications. However, I can provide you with a list of some common HTML elements grouped by their general purposes:
 
-  <h2 style="color: rgb(28, 63, 203); text-align: left;" >MY Demo Calculator</h2>
+1. **Document Structure:**
+   - `<!DOCTYPE html>`
+   - `<html>`
+   - `<head>`
+     - `<title>`
+     - `<meta>`
+     - `<link>`
+   - `<body>`
+   - `<h1>` to `<h6>` (heading elements)
+   - `<p>` (paragraph)
+   - `<br>` (line break)
+   - `<hr>` (horizontal rule)
 
-  <table style="text-align: center ;"> 
-    <tr>
-      <td colspan="4"><input type="text" id="result" readonly></td>
-    </tr>
-    <tr>
-      <td><button onclick="appendNumber('7')">7</button></td>
-      <td><button onclick="appendNumber('8')">8</button></td>
-      <td><button onclick="appendNumber('9')">9</button></td>
-      <td><button onclick="setOperator('+')">+</button></td>
-    </tr>
-    <tr>
-      <td><button onclick="appendNumber('4')">4</button></td>
-      <td><button onclick="appendNumber('5')">5</button></td>
-      <td><button onclick="appendNumber('6')">6</button></td>
-      <td><button onclick="setOperator('-')">-</button></td>
-    </tr>
-    <tr>
-      <td><button onclick="appendNumber('1')">1</button></td>
-      <td><button onclick="appendNumber('2')">2</button></td>
-      <td><button onclick="appendNumber('3')">3</button></td>
-      <td><button onclick="setOperator('*')">*</button></td>
-    </tr>
-    <tr>
-      <td><button onclick="appendNumber('0')">0</button></td>
-      <td><button onclick="clearResult()">C</button></td>
-      <td><button onclick="calculateResult()">=</button></td>
-      <td><button onclick="setOperator('/')">/</button></td>
-    </tr>
-  </table>
+2. **Text Formatting:**
+   - `<b>` (bold)
+   - `<i>` (italic)
+   - `<u>` (underline)
+   - `<strong>` (strong importance)
+   - `<em>` (emphasized)
+   - `<mark>` (marked/highlighted text)
+   - `<sub>` (subscript)
+   - `<sup>` (superscript)
+   - `<small>` (small text)
 
-  <script>
-    let currentInput = '';
-    let operator = '';
-    let result = document.getElementById('result');
+3. **Links and Navigation:**
+   - `<a>` (anchor)
+   - `<nav>` (navigation)
+   - `<ul>` (unordered list)
+   - `<ol>` (ordered list)
+   - `<li>` (list item)
 
-    function appendNumber(number) {
-      currentInput += number;
-      updateResult();
-    }
+4. **Forms:**
+   - `<form>`
+   - `<input>` (various types for text, checkbox, radio, etc.)
+   - `<textarea>`
+   - `<button>`
+   - `<select>` (dropdown)
+   - `<option>` (option within a dropdown)
+   - `<label>`
+   - `<fieldset>` and `<legend>` (grouping form elements)
 
-    function setOperator(op) {
-      operator = op;
-      currentInput += ' ' + operator + ' ';
-      updateResult();
-    }
+5. **Media:**
+   - `<img>` (image)
+   - `<audio>` (audio player)
+   - `<video>` (video player)
+   - `<figure>` and `<figcaption>` (grouping media content)
 
-    function calculateResult() {
-      try {
-        currentInput = eval(currentInput);
-        updateResult();
-      } catch (error) {
-        result.value = 'Error';
-      }
-    }
+6. **Tables:**
+   - `<table>`
+   - `<thead>`, `<tbody>`, `<tfoot>` (table sections)
+   - `<tr>` (table row)
+   - `<th>` (table header cell)
+   - `<td>` (table data cell)
+   - `<caption>` (table caption)
 
-    function clearResult() {
-      currentInput = '';
-      updateResult();
-    }
+7. **Semantic Elements:**
+   - `<header>`
+   - `<footer>`
+   - `<main>`
+   - `<article>`
+   - `<section>`
+   - `<aside>`
+   - `<details>` and `<summary>` (expandable details)
 
-    function updateResult() {
-      result.value = currentInput;
-    }
-  </script>
+8. **Meta Information:**
+   - `<meta>` (metadata)
+   - `<base>` (base URL for relative URLs)
 
+9. **Scripting:**
+   - `<script>` (JavaScript)
+   - `<noscript>` (fallback content for non-script environments)
+
+This is just a selection of commonly used HTML elements. The HTML specification defines many more elements and attributes for building diverse and structured web pages. Always refer to the latest HTML specification for the most up-to-date information.
+  </p>
 </body>
 </html>
