@@ -1,6 +1,6 @@
 {
-    "liveServer.settings.root": "/path/to/your/remote/workspace",
-    "liveServer.settings.CustomBrowser": "chrome" // You can set this to your preferred browser
+    "liveServer.settings.root": "gh repo clone shahadatk071/my-test-data",
+    "liveServer.settings.CustomBrowser": "chrome" 
   }
 
   
