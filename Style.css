@@ -112,10 +112,3 @@ input, textarea {
     max-width: 150px;
     padding: 10px 15px;
 }
-
-footer {
-    text-align: bottom;
-    background-color: #333;
-    padding: 15px 0;
-    color: white;
-}
